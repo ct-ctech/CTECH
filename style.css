@@ -1,0 +1,1148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap');
+
+@font-face {
+    font-family: hemi-head;
+    src: url(Font/hemihead.ttf.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(15px);
+    height: 12vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    animation: nav-shadow 15s ease infinite;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    padding: 10px;
+}
+
+.logo h2{
+    font-family: hemi-head;
+    font-size: 35px;
+    padding: 10px;
+}
+
+
+
+.regBtn{
+    padding: 10px;
+}
+
+.register{
+    margin-right: 30px;
+    padding: 8px;
+    color: #FFFFFF;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 8px;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+    animation: button-animation 2s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes button-animation {
+    0%{
+        
+        box-shadow: 0px 0px 0px rgb(201, 4, 4);
+    }
+    25%{
+        
+        box-shadow: 0px 0px 15px rgb(160, 6, 6);
+    }
+    50%{
+        
+        box-shadow: 0px 0px 30px rgb(168, 0, 0);
+    }
+    75%{
+        
+        box-shadow: 0px 0px 15px rgb(44, 12, 2);
+    }
+    100%{
+        
+        box-shadow: 0px 0px 0px rgb(63, 17, 4);
+    }
+}
+
+.register:hover{
+    transform: scale(105%,105%);
+    animation: none;
+}
+
+.HomeSection{
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    background-image: url('Images/HomeimgDesktop.jpg');
+    background-position: center;
+}
+
+.homepart1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    padding-bottom: 50px;
+}
+
+.collegename{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homehicasHeading{
+    font-family: 'Noticia Text', serif;
+    font-size: 30px;
+    color: white;
+}
+
+.homehicasSubheading{
+    font-family: 'Noticia Text', serif;
+    font-size: 25px;
+    color: white;
+}
+
+.homehicascbe{
+    font-family: 'Noticia Text', serif;
+    font-size: 20px;
+    color: white;
+}
+
+.deptofct{
+    color: white;
+    font-size: 30px;
+    font-family: 'Noticia Text', serif;
+    padding-bottom: 10px;
+}
+
+.presents{
+    color: white;
+    font-size: 25px;
+    font-family: 'Noticia Text', serif;
+}
+
+.homepart2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.homectechheading{
+    font-size: 80px;
+    font-family: hemi-head;
+    color: white;
+    padding: 10px 0;
+}
+
+.date{
+    color: white;
+    font-size: 20px;
+    font-family: 'Noticia Text', serif; 
+    
+}
+
+
+
+/* Carousel*/
+.carousel-container {
+    position: relative;
+    width: 100%; /* Set the width of your images */
+    height: 90vh; /* Set the height of your images */
+    margin: auto;
+    overflow:hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 1500px; /* Set the width of your images */
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+/*Carousel End*/
+
+.AboutDepartment{
+    display: flex;
+    padding: 40px 40px 40px 100px;
+}
+
+.Designation{
+    padding: 5px;
+}
+
+.Designation span{
+    font-weight: bold;
+    color: black;
+}
+
+.FacultyMembers{
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+.AboutLeftPage{
+    width: 20%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.AboutLeftPage img{
+    border-radius: 5px;
+}
+
+.AboutRightPage{
+    width: 70%;
+    margin-left: 30px;
+}
+
+.AboutHeading{
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.AboutHeading-mobileview{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.AboutInfo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.Faculties-section1{
+    transition: 0.3s;
+}
+
+.Faculties-section1:hover{
+    transform: scale(120%,120%);
+    box-shadow: 5px 5px 2px #282727;
+}
+
+.EventInfoSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.eventHeading{
+    padding: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.EventDetailSection{
+    display: flex;
+    transition: 0.8s;
+}
+
+.EventLeftPage{
+    width: 50%;
+    transition: 0.3s;
+}
+
+.EventRightPage{
+    width: 50%;
+    transition: 0.3s;
+}
+
+.Event{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid rgb(65, 8, 51);
+    background-color: #cbbacf;
+    transition: 0.3s;
+}
+
+.EventDetailSection .EventLeftPage .Event:hover{
+    transform: scale(105%,105%);
+    box-shadow: 5px 5px 2px #1f1e1e;
+}
+
+.EventCenter .EventDance:hover{
+    transform: scale(105%,105%);
+    box-shadow: 5px 5px 2px #1f1e1e;
+}
+
+.EventDetailSection .EventRightPage .Event:hover{
+    transform: scale(105%,105%);
+    box-shadow: -5px 5px 2px #1f1e1e;
+}
+
+.Event img{
+    width: 265px;
+    height: 250px;
+    border-radius: 7px;
+}
+
+.EventName{
+    color: rgb(65, 8, 51);
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 0 20px 0;
+    font-weight: bold;
+}
+
+.Rules ul li{
+    line-height: 2;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.EventCenter{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.EventDance{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.EventDance ul li{
+    margin-left: 15px;
+}
+
+span{
+    color: red;
+}
+
+.brochureInfo{
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+    color: rgb(170, 151, 151);
+    font-weight: bold;
+}
+
+.brochureBtn{
+    padding: 15px;
+}
+
+.BrochureButton{
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+    animation: button-animation 2s linear infinite;
+    cursor: pointer;
+}
+
+.BrochureButton:hover{
+    transform: scale(105%,105%);
+    animation: none;
+}
+
+.EventDetailSection{
+    display: flex;
+    transition: 0.8s;
+}
+
+.EventLeftPage{
+    width: 50%;
+    transition: 0.3s;
+}
+
+.EventRightPage{
+    width: 50%;
+    transition: 0.3s;
+}
+
+.Event{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid rgb(65, 8, 51);
+    background-color: #cbbacf;
+    transition: 0.3s;
+}
+
+.EventDetailSection .EventLeftPage .Event:hover{
+    transform: scale(105%,105%);
+    box-shadow: 5px 5px 2px #1f1e1e;
+}
+
+.EventCenter .EventDance:hover{
+    transform: scale(105%,105%);
+    box-shadow: 5px 5px 2px #1f1e1e;
+}
+
+.EventDetailSection .EventRightPage .Event:hover{
+    transform: scale(105%,105%);
+    box-shadow: -5px 5px 2px #1f1e1e;
+}
+
+.Event img{
+    width: 265px;
+    height: 250px;
+    border-radius: 7px;
+}
+
+.EventName{
+    color: rgb(65, 8, 51);
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 0 20px 0;
+    font-weight: bold;
+}
+
+.Rules ul li{
+    line-height: 2;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.EventCenter{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.EventDance{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
+
+/*Gallery*/
+.gallery{     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200vh;
+    width: 100%;
+    margin: 80px 0 50px 0;
+
+}
+.gallery h3{
+    font-size: 50px;
+}
+
+.gallery h4{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.gallery-ctech23-title h4, .gallery-celebrations-title h4{
+    font-family: hemi-head;
+}
+
+.ctech23, .festivals{
+    font-family: hemi-head;
+}
+
+/*celebration*/
+
+.gallery-celebrations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    width: 75%;
+    margin: auto;
+  }
+
+  .gallery-celebrations-title {
+    margin: 30px 0;
+  }
+
+  .gallery-celebrations-carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .gallery-celebrations-carousel-wrapper {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    height: 100%;
+    width: 900%; /* Adjusted width for 9 slides (100% * 9) */
+  }
+
+  .gallery-celebrations-carousel-slide {
+    height: 100%;
+    flex: 0 0 11.11%; /* Adjusted to 11.11% to fit nine slides (100% / 9) */
+    box-sizing: border-box;
+  }
+
+  .gallery-celebrations-carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+/*ctech23*/
+
+.gallery-ctech23{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    width: 75%;
+    margin: auto;
+}
+
+.gallery-ctech23-title{
+    margin: 30px 0;
+}
+
+.gallery-ctech23-carousel-container {
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.gallery-ctech23-carousel-wrapper {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    height: 100%;
+    width: 400%;
+}
+
+.gallery-ctech23-carousel-slide {
+    height: 100%;
+    flex: 0 0 25%; 
+    box-sizing: border-box;
+}
+
+.gallery-ctech23-carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Devs a:hover{
+    color: #3269a0;
+}
+
+
+
+.Developers{
+    background-color: #c2ccd4;
+    padding: 10px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: inset 0px 0px 20px #000;
+}
+
+.DevelopersHeading{
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.DevelopersInfo{
+    width: 90%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.Devs{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.Devs img{
+    border-radius: 50%;
+    height: 110px;
+    width: 100px;
+}
+
+.Devs a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+#LinkedInLink{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.contact-section{
+    height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 25px;
+    font-family: hemi-head;
+}
+
+.contact-section h3{
+    position: absolute;
+    font-size: 30px;
+    top: 20px;
+    left: 50px;
+}
+
+.contact-left{
+    background:linear-gradient(rgba(0, 0, 0,0.7),rgba(0,0,0,0.7)) , url('Images/ContactSecImg.jpg'), no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 280px ;
+    width: 50%;
+    position:absolute;
+    top: 70px;
+    display: flex;
+}
+
+.contact-right{
+    background-color: rgb(170, 179, 179);
+    position: absolute;
+    height: 280px;
+    width: 40%;
+    right: 25px;
+    top: 70px;
+
+}
+
+.contact-right iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-left-cta{
+    display: flex;
+    height: 100%;
+    width: 40%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 30px;
+}
+
+.contact-left-cta img{
+    height: 30px ;
+}
+
+.contact-left-cta *{
+    display: flex;
+    align-items: center;
+}
+
+.contact-left-cta a{
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 30px;
+    color: #fff;
+    
+}
+.contact-left-cta .instagram a{
+    transition:0.3s;
+}
+
+.contact-left-cta .email a{
+    transition:0.3s;
+}
+
+.contact-left-cta .whatsapp a{
+    transition:0.3s;
+}
+
+.contact-left-cta .instagram a:hover{
+    color:rgb(170, 9, 89)
+}
+
+.contact-left-cta .email a:hover{
+    color:red;
+}
+
+.contact-left-cta .whatsapp a:hover{
+    color:rgb(0, 243, 20);
+}
+
+.contact-left-info{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-left-info-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.contact-left-info-content h4{
+    font-size: large;
+    margin-bottom: 15px;
+}
+
+.contact-left-cta svg{
+    color: white;
+}
+
+.footer{
+    height: 5vh;
+    background-color: #595959;
+    color: white;
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h4{
+    font-weight: normal;
+}
+
+
+/* Mobile Design */
+
+@media only screen and (max-width: 600px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+        height: 10vh;
+    }
+    .logo h2{
+        font-size: 24px;
+    }
+
+    .logo img{
+        width: 90px;
+    }
+
+    .register{
+        width: min-content;
+        font-size: 12px;
+    }
+
+
+
+    .HomeSection{
+        height: 80vh;
+        width: 100%;
+        background-image: url('Images/HomeImgMobile.jpg');
+        background-position: center;
+
+    }
+
+    .homehicasHeading{
+        font-size: 24px;
+    }
+
+    .homehicasSubheading{
+        font-size: 20px;
+    }
+    
+    .homehicascbe{
+        font-size: 18px;
+    }
+
+    .homectechheading{
+        font-size: 50px;
+    }
+
+    .deptofct{
+        font-size: 18px;
+    }
+
+    .presents{
+        font-size: 16px;
+    }
+
+    .date{
+        font-size: 16px;
+    }
+
+    .AboutDepartment{
+        margin-left: -30px;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .AboutLeftPage, .AboutRightPage{
+        width: 100%;
+    }
+
+    .AboutHeading{
+        display: none;
+    }
+    .AboutHeading-mobileview{
+        display: block;
+    }
+
+    .AboutInfo{
+        font-size: 16px;
+        position: relative;
+        right: 10px;
+    }
+
+    .FacultyMembers{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Faculties-section1:hover{
+        transform: scale(105%,100%);
+        box-shadow: 5px 5px 2px #5a5353;
+    }
+
+    .Designation{
+        padding-bottom: 50px;
+    }
+
+    .EventInfoSection{
+        align-items: center;
+    }
+
+    .eventHeading{
+        font-size: 40px;
+    }
+
+    .brochureBtn{
+        width: max-content;
+    }
+
+    .BrochureButton{
+        font-size: 18px;
+    }
+
+    .EventDetailSection{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .EventLeftPage, .EventRightPage, .EventCenter{
+        width: 100%;
+
+    }
+
+    .Event{
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        padding: 10%;
+    }
+
+    
+
+    .Info2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Rules ul{
+        margin-left: 8px;
+    }
+
+    .gallery-title{
+        margin: 10px;
+    }
+
+    .Developers{
+        height: 250px;
+        margin-bottom: 30px;
+        width: 100vw;
+    }
+
+    .DevelopersInfo{
+        flex-direction: column;
+    }
+
+    .Devs{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: auto;
+    }
+
+    .DevelopersInfo{
+        width: 100%;
+        margin: auto;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-weight: bold;
+    } 
+
+    .gallery{     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 120vh;
+        width: 100%;
+        margin: 80px 0 30px 0;
+    
+    }
+
+    .gallery-celebrations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 50vh;
+        width: 90%;
+        margin: auto;
+    }
+
+    .gallery-celebrations-title {
+        margin: 15px 0;
+    }
+
+    .gallery-celebrations-carousel-container {
+        position: relative;
+        width: 100%;
+        height: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .gallery-celebrations-carousel-wrapper {
+        display: flex;
+        transition: transform 1s ease-in-out;
+        height: 100%;
+        width: 900%; /* Adjusted width for 9 slides (100% * 9) */
+    }
+
+    .gallery-celebrations-carousel-slide {
+        height: 100%;
+        flex: 0 0 11.11%; /* Adjusted to 11.11% to fit nine slides (100% / 9) */
+        box-sizing: border-box;
+    }
+
+    .gallery-celebrations-carousel-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+
+
+    .gallery-ctech23{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 50vh;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .gallery-ctech23-title{
+        margin: 30px 0;
+    }
+    
+    .gallery-ctech23-carousel-container {
+        position: relative;
+        width: 100%; 
+        height: 100%; 
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .gallery-ctech23-carousel-wrapper {
+        display: flex;
+        transition: transform 1s ease-in-out;
+        height: 100%;
+        width: 400%;
+    }
+    
+    .gallery-ctech23-carousel-slide {
+        height: 100%;
+        flex: 0 0 25%; 
+        box-sizing: border-box;
+    }
+    
+    .gallery-ctech23-carousel-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+
+    .contact-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 40vh;
+        width: 100vw;
+        position: relative;
+    }
+
+    .contact-left, .contact-right{
+        margin: 0;
+        padding: 0;
+        width: 80%;
+        margin: auto;
+        position: absolute;
+    }
+    .contact-right{
+        right: auto;
+        top: 400px;
+        margin: auto;
+    }
+
+    .footer{
+        height: 5vh;
+        background-color: #595959;
+        color: white;
+        letter-spacing: 0.1rem;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: -420px;
+    }
+
+    .Developers{
+        height: 100vh;
+        justify-content: space-around;
+    }
+
+    .DevelopersHeading{
+        padding-top: 20px;
+    }
+
+}
+
+
+/*Background Animation*/
+body {
+    background: linear-gradient(147deg,#e33464,#7ab7f3,#983b3b,#85f972,#cf79e2);
+    background-size: 300% 300%;
+    animation: gradient-animation 15s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /*Navigation bar animation*/
+  @keyframes nav-shadow {
+    0%{
+        
+        box-shadow: 0px 0px 0px #9e0c33;
+    }
+    25%{
+        
+        box-shadow: 0px 0px 15px #3269a0;
+    }
+    50%{
+        
+        box-shadow: 0px 0px 30px #692727;
+    }
+    75%{
+        
+        box-shadow: 0px 0px 15px #3a7231
+    }
+    100%{
+        
+        box-shadow: 0px 0px 0px #854b92;
+    }
+}
+
+/**Scrolling animation*/
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: scale(-50%);
+    transition: all 1.5s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(100%);
+}
