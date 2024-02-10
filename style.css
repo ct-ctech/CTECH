@@ -13,6 +13,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    width: 100%;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -96,6 +100,7 @@ nav{
     padding-top: 100px;
     background-image: url('Images/HomeimgDesktop.jpg');
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .homepart1{
@@ -809,11 +814,11 @@ span{
     }
 
     .homehicasSubheading{
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .homehicascbe{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .homectechheading{
