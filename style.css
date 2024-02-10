@@ -100,7 +100,6 @@ nav{
     padding-top: 100px;
     background-image: url('Images/HomeimgDesktop.jpg');
     background-position: center;
-    background-repeat: no-repeat;
 }
 
 .homepart1{
@@ -780,6 +779,11 @@ span{
         margin: 0;
         padding: 0;
     }
+
+    .body{
+        width: 100%;
+    }
+    
     nav{
         display: flex;
         width: 100vw;
