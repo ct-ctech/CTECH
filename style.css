@@ -467,6 +467,55 @@ span{
     width: 45%;
 }
 
+.Magazine{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.MagazineHeading{
+    padding: 20px;
+    padding-top: 50px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: hemi-head;
+}
+
+.MagazineHeading span{
+    font-family: hemi-head;
+}
+
+.MagazineInfo{
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+    color: rgb(170, 151, 151);
+    font-weight: bold;
+}
+
+.MagazineBtn{
+    padding: 15px;
+}
+
+.MagazineButton{
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+    animation: button-animation 2s linear infinite;
+    cursor: pointer;
+}
+
+.MagazineButton:hover{
+    transform: scale(105%,105%);
+    animation: none;
+}
+
 
 /*Gallery*/
 .gallery{     
@@ -922,7 +971,23 @@ span{
         padding: 10%;
     }
 
-    
+    .Magazine{
+        align-items: center;
+    }
+
+    .MagazineHeading{
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MagazineBtn{
+        width: max-content;
+    }
+
+    .MagazineButton{
+        font-size: 18px;
+    }
 
     .Info2{
         display: flex;
