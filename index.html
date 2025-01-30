@@ -3,417 +3,382 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/FaviconImg.png">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>CTECH ' 25</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Images/FaviconImg.png"> 
-    
 </head>
-<body>
+<body class="relative font-karla">
+    <nav class="fixed w-full bg-white shadow dark:bg-purple-300 z-20">
+    <div class="container px-6  mx-auto md:flex md:justify-between md:items-center">
+        <div class="flex items-center justify-between">
+            <a href="#">
+                <img class="h-[65px] w-[65px]" src="./assets/Eagle Logo PNG.png" alt="CTECH2K25 Logo">
+            </a>
 
-    <nav class="navbar">
-        <div class="logo">
-            <img src="Images/Eagle Logo PNG.png" width="120px">
-            <h2>
-                CTECH ' 25
-            </h2>
-        </div>
-        <div class="regBtn">
-           <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-YtksA7eaoL-3qoLk_EZpPMv2V44B1F9rP6Dnvru_PJCuRg/viewform?usp=sf_link" target="_blank">
-                <button class="register">
-                    Register
+            <!-- Mobile menu button -->
+            <div class="flex lg:hidden">
+                <button id="menu-toggle" type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
+                    <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+                    </svg>
+            
+                    <svg id="menu-close-icon" xmlns="http://www.w3.org/2000/svg" class="hidden w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
                 </button>
-           </a>
+            </div>
         </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="dark:bg-purple-300 hidden absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 bg-white md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:flex md:items-center">
+            <div class="w-full nav-container flex flex-col align-content-center justify-content-center md:flex-row md:mx-6">
+                <a class="my-2 text-gray-800 hover:text-blue-500 md:mx-4 md:my-0" href="#home">Home</a>
+                <a class="my-2 text-gray-800 hover:text-blue-500 md:mx-4 md:my-0" href="#about">About</a>
+                <a class="my-2 text-gray-800 hover:text-blue-500 md:mx-4 md:my-0" href="#events">Events</a>
+                <a class="my-2 text-gray-800 hover:text-blue-500 md:mx-4 md:my-0" href="#details">Details</a>
+                <a class="my-2 text-gray-800 hover:text-blue-500 md:mx-4 md:my-0" href="#team">Team</a>
+                <a class="my-2 text-gray-800 hover:text-blue-500 md:mx-4 md:my-0" href="#contact">Contact</a>
+            </div>
+
+        </div>
+    </div>
     </nav>
 
-    <div class="HomeSection" >
-        <div class="homepart1">
-            <div class="homehicaslogo">
-                <img src="Images/hicaslogo.jpg">
-            </div>
-            <div class="collegename">
-                <div class="homehicasHeading">
-                    Hindusthan
-                </div>
-                <div class="homehicasSubheading">
-                    College of Arts & Science 
-                </div>
-                <div class="homehicascbe">
-                    Coimbatore
-                </div>
-            </div>
-            <div class="homesilverlogo">
-                <img src="Images/Silverlogo">
-            </div>
-        </div>
-        <div class="homepart2">
-            <div class="deptofct">
-                DEPARTMENT OF COMPUTER TECHNOLOGY 
-            </div>
-            <div class="presents">
-                PRESENTS 
-            </div>
-            <div class="homectechheading hidden">
-                CTECH ' 25
-            </div>
-            <div class="date">
-                FEB 18 | 2025
+    <!-- <header id="home" class="pt-12">
+    <div class="w-full bg-center bg-cover h-[80vh]" style="background-image: url('./assets/bgg.jpg');">
+        <div class="flex items-center justify-center w-full h-full bg-gray-900/40">
+            <div class="text-center">
+                <h1 class="text-3xl font-semibold text-white lg:text-4xl mb-3">CTECH2K25</h1>
+                <h1 class="text-xl  text-white lg:text-2xl w-[80%] md:w-[60%] mx-auto">Sixth National Technical Symposium conducted by the Department of Computer Technology</h1>
+                <button class="w-[75%] sm:w-[60%] md:w-[40%] lg:w-[30%] px-5 py-2 mt-4 text-lg font-medium text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Register</button>
             </div>
         </div>
     </div>
+    </header> -->
 
-    <div class="AboutDepartment">
-        <div class="AboutLeftPage">
-            <div class="AboutHeading-mobileview">
-                About the <span>D</span>epartment 
-            </div>
-            <img src="Images/HODImg.jpg" width="250px" class="shadow-effect">
-            <div class="Designation">
-                <span>Dr.K.Mythili</span>
-                <br>
-                Prof & Head
-            </div> 
-        </div>
-        <div class="AboutRightPage">
-            <div class="AboutHeading">
-                About the <span>D</span>epartment 
-            </div>
-            <div class="AboutInfo">
-                The Department of Computer Technology was established in 2008. The department offers B.Sc (Computer Technology) as three-year undergraduate programme, headed by Dr.K.Mythili , Professor and is followed by 6 Faculty members with nearly 360 students. The department has well qualified, experienced and committed faculty to provide quality industry tuned education to the students. The department conducts many Hands-on Training, Seminars and workshops. Computer Technology Association organizes a National Level Technical Symposium CTECH yearly to exhibit the student talents. The Department is recognized under DBT star College Scheme sponsored by MHRD. The department has very good placement records and many students have been placed in WIPRO Technologies, AMAZON Tech Mahindra, TCS, CTS, INFOSYS, Accenture, VEE technologies, KGISL, Velan InfoTech, Asec Technology, etc.
-            </div>
-        </div>
-    </div>
-
-    <div class="FacultyMembers">
-        <div class="Faculties-section1">
-            <img src="Images/AmalmaryImg.jpg" width="200px" height="250px" class="shadow-effect">
-            <div class="Designation">
-                <span>Mrs.M.Amalmary</span>
-                <br>
-                Asst.Prof
-            </div>
-        </div>
-        <div class="Faculties-section1">
-            <img src="Images/MythiliDImg.png" width="200px" height="250px" class="shadow-effect">
-            <div class="Designation">
-                <span>Mrs.D.Mythili</span>
-                <br>
-                Asst.Prof
-            </div>
-        </div>
-        <div class="Faculties-section1">
-            <img src="Images/DhanaPriyaImg.jpg" width="200px" height="250px" class="shadow-effect">
-            <div class="Designation">
-                <span>Mrs.N.Dhanapriya</span>
-                <br>
-                Asst.Prof
-            </div>
-        </div>
-        <div class="Faculties-section1">
-            <img src="Images/SandhanaMeghalaImg.jpeg" width="200px" height="250px" class="shadow-effect">
-            <div class="Designation">
-                <span>Dr.S.Sandhana Megala</span>
-                <br>
-                Asst.Prof
-            </div>
-        </div>
-        <div class="Faculties-section1">
-            <img src="Images/UmaSanthiyaImg.jpg" width="200px" height="250px" class="shadow-effect">
-            <div class="Designation">
-                <span>Mrs.P.Uma Santhiya</span>
-                <br>
-                Asst.Prof
-            </div>
-        </div>
-    </div>
-
-    <div class="EventInfoSection">
-        <div class="eventHeading">
-            <span>E</span>vents
-        </div>
-        <div class="brochureInfo">
-            Click the below button to view brochure
-        </div>
-        <div class="brochureBtn">
-            <a href="https://drive.google.com/file/d/1HNdq4vXYd9B41vuTt0JFUhvM3BJYeqN_/view?usp=drive_link" target="_blank">
-                <button class="BrochureButton">
-                    View Brochure
-                </button>
-            </a>
-        </div>
-    </div>
-
-    <div class="EventDetailSection">    
-        <div class="EventLeftPage">
-            <div class="Event">
-                <div class="Info1">
-                    <div class="EventImg">
-                        <img src="Images/DebuggingImg.jpg">
-                    </div>
-                </div>               
-                <div class="Info2">
-                    <div class="EventName">
-                        Debugging
-                    </div>
-                    <div class="Rules">
-                        <ul>
-                            <li>2 Members per team</li>
-                            <li>Languages: C++, Java, Python</li>
-                            <li>Refer other informations in brochure</li>
-                        </ul>
-                    </div>
-                </div> 
-            </div>
-            <div class="Event">
-                <div class="Info1">
-                    <div class="EventImg">
-                        <img src="Images/QuizImg.jpg">
-                    </div>
-                </div>               
-                <div class="Info2">
-                    <div class="EventName">
-                        Quiz
-                    </div>
-                    <div class="Rules">
-                        <ul>
-                            <li>2 Members per team</li>
-                            <li>Prelims will be conducted</li>
-                            <li>Refer other informations in brochure</li>
-                        </ul>
-                    </div>
-                </div> 
-            </div>
-            <div class="Event">
-                <div class="Info1">
-                    <div class="EventImg">
-                        <img src="Images/MarketingImg.jpg">
-                    </div>
-                </div>               
-                <div class="Info2">
-                    <div class="EventName">
-                        Marketing
-                    </div>
-                    <div class="Rules">
-                        <ul>
-                            <li>5 members per team</li>
-                            <li>Bring your own materials</li>
-                            <li>Refer other informations in brochure</li>
-                        </ul>
-                    </div>
-                </div> 
-            </div>
-        </div>
-        <div class="EventRightPage">
-            <div class="Event">
-                <div class="Info1">
-                    <div class="EventImg">
-                        <img src="Images/PaperPresentationImg.jpg">
-                    </div>
-                </div>               
-                <div class="Info2">
-                    <div class="EventName">
-                        Paper Presentation
-                    </div>
-                    <div class="Rules">
-                        <ul>
-                            <li>2 members per team</li>
-                            <li>Selected PPT only presented on stage</li>
-                            <li>Refer other informations in brochure</li>
-                        </ul>
-                    </div>
-                </div> 
-            </div>
-            <div class="Event">
-                <div class="Info1">
-                    <div class="EventImg">
-                        <img src="Images/PosterDesigningImg.jpg">
-                    </div>
-                </div>               
-                <div class="Info2">
-                    <div class="EventName">
-                        Poster Designing
-                    </div>
-                    <div class="Rules">
-                        <ul>
-                            <li>2 members per team</li>
-                            <li>Software: Paint, Photoshop, CorelDRAW</li>
-                            <li>Refer other informations in brochure</li>
-                        </ul>
-                    </div>
-                </div> 
-            </div>
-            <div class="Event">
-                <div class="Info1">
-                    <div class="EventImg">
-                        <img src="Images/MehandiImg.jpg">
-                    </div>
-                </div>               
-                <div class="Info2">
-                    <div class="EventName">
-                        Mehandi
-                    </div>
-                    <div class="Rules">
-                        <ul>
-                            <li>2 members per team</li>
-                            <li>Colour mehandi not allowed</li>
-                            <li>Refer other informations in brochure</li>
-                        </ul>
-                    </div>
-                </div> 
-            </div>            
-        </div>
-    </div>
-
-    <div class="EventCenter">
-        <div class="Event EventDance">
-            <div class="Info1">
-                <div class="EventImg">
-                    <img src="Images/DanceImg.jpg">
-                </div>
-            </div>               
-            <div class="Info2">
-                <div class="EventName">
-                    Group Dance
-                </div>
-                <div class="Rules">
-                    <ul>
-                        <li>Maximum 6 participants per team</li>
-                        <li>No vulnerable songs & dance</li>
-                        <li>Refer other informations in brochure</li>
-                    </ul>
-                </div>
-            </div> 
-        </div>
-    </div>
-
-    <div class="Magazine">
-        <div class="MagazineHeading">
-            CTECH ' 24 <span>Magazine</span>
-        </div>
-        <div class="MagazineInfo">
-            Click the below button to view Magazine
-        </div>
-        <div class="MagazineBtn">
-            <a href="https://drive.google.com/file/d/1Q80bXsNSX9rinuVKBNUDK-yg5JAyLPCd/view?usp=drive_link" target="_blank">
-                <button class="MagazineButton">
-                    View Magazine 
-                </button>
-            </a>
-        </div>
-    </div>
-
-    <div class="gallery">
-        <div class="gallery-title">
-            <h3><span>G</span>ALLERY</h3>
-        </div>
-
-        <div class="gallery-celebrations">
-
-            <div class="gallery-celebrations-title">
-                <h4><span class="festivals">A</span>RCHIVES</h4>
-            </div>
-
-            <div class="gallery-celebrations-carousel-container">
-                <div class="gallery-celebrations-carousel-wrapper">
-                  <div class="gallery-celebrations-carousel-slide"><img src="Images/Gallery/IndoorAuditorium.jpg" alt="Slide 1"></div>
-                  <div class="gallery-celebrations-carousel-slide"><img src="Images/Gallery/staffs.jpg" alt="Slide 2"></div>
-                  <div class="gallery-celebrations-carousel-slide"><img src="Images/Gallery/group pic.jpg" alt="Slide 3"></div>
-                  <div class="gallery-celebrations-carousel-slide"><img src="Images/Gallery/poster.jpg" alt="Slide 3"></div>
-                  <div class="gallery-celebrations-carousel-slide"><img src="Images/Gallery/website.jpg" alt="Slide 3"></div>
-                  <div class="gallery-celebrations-carousel-slide"><img src="Images/Gallery/magazine.jpg" alt="Slide 3"></div>
-                  <div class="gallery-celebrations-carousel-slide"><img src="Images/Gallery/invitation.jpg" alt="Slide 3"></div>
-                  <div class="gallery-celebrations-carousel-slide"><img src="Images/Gallery/editing.jpg" alt="Slide 3"></div>
-                  <div class="gallery-celebrations-carousel-slide"><img src="Images/Gallery/certificate.jpg" alt="Slide 3"></div>
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="gallery-ctech23">
-
-            <div class="gallery-ctech23-title">
-                <h4><span class="ctech23">C</span>TECH ' 23</h4>
-            </div>
-
-            <div class="gallery-ctech23-carousel-container">
-                <div class="gallery-ctech23-carousel-wrapper">
-                  <div class="gallery-ctech23-carousel-slide"><img src="Images/Gallery/2.jpg" alt="Slide 1"></div>
-                  <div class="gallery-ctech23-carousel-slide"><img src="Images/Gallery//1.jpg" alt="Slide 2"></div>
-                  <div class="gallery-ctech23-carousel-slide"><img src="Images/Gallery/3.jpg" alt="Slide 3"></div>
-                  <div class="gallery-ctech23-carousel-slide"><img src="Images/Gallery/4.jpg" alt="Slide 3"></div>
-                  
-                </div>
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="Developers">
-        <div class="DevelopersHeading hidden-head-dev">
-            <pre><span>W</span>eb <span>D</span>evelopers</pre>
-        </div>
-        <div class="DevelopersInfo">
-            <div class="Devs hidden-dev">
-                <img src="Images/Devs1.jpg">
-                <a href="https://www.linkedin.com/in/saranya-m-b17157281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" id="LinkedInLink" target="_blank"> 
-                    SARANYA M 
-                </a>      
-            </div>
-            <div class="Devs hidden-dev">
-                <img src="Images/Devs2.jpg">
-                <a href="https://www.linkedin.com/in/devarajan-sasikumar-402863227?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOhxMKFjkQ7ecDEKI7yHavQ%3D%3D" id="LinkedInLink" target="_blank">
-                    DEVARAJAN S
-                </a>
-            </div>
-            <div class="Devs hidden-dev">
-                <img src="Images/Devs3.jpg">
-                <a href="https://www.linkedin.com/in/pradeepkumar-1807-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" id="LinkedInLink" target="_blank">
-                    PRADEEP KUMAR R 
-                </a>
-            </div>
-            <div class="Devs hidden-dev">
-                <img src="Images/Devs4.jpg">
-                <a href="https://www.linkedin.com/in/bharath-kumar-m04?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" id="LinkedInLink" target="_blank">
-                    BHARATH KUMAR M
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="contact-section">
-        <h3 style="font-family: hemi-head;" ><span style="color:red; font-family: hemi-head;" >C</span>ontact us</h3>
-        
-        <div class="contact-left">
-
-            <div class="contact-left-cta">
-                <div class="email">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAoJJREFUWEftlz9oFEEUxr83s8aoNwaJiXcbU9hYGKOFhY2NacRKwaCNYqXYCBYqKCI2EkQLsbAQCy0jQtTKyqQRtBDEJLYqeHfRC/6bC8bs7Ty5M3funbvZ280GErmtljfz5vvNN2/f7hKW2UXLjActoLATaTm08h36qLBVwDoFcKcgcTv9w3kZtqso49k16IUl9xGzhGWe2t/wwZtfV0O5jlW7YMwzAOurkwh0La1LFwkwUYQb5zIgppQ1xODznrGvxoiBzTPO6796ntGski8I2O2z2Khg90imiEIcqHwKXYbkMAF7ffLHbO3W4vUOKekAsAJEPzHoUI8uPY8ClVXWHgI/BLApIO+nrd21vg7llOQQsRKBL2S0udEMVF6JswwaWmCTlWVs7daMaXQoDKiyAAFPrNXu0a5paD+wwkYo55ccBrC/GfBFA82LvBNGHkjPzI17RafWtfUb4T4GsKUZmEQc8gjNMnC6R7t3y7GckicA3ALQ3ixM0kBV3fvzN8ejgFTnJnVkcbR9c/4LoGn86dTdMW35DEAC6PTLj+wQg8cJZoAhHwR020BOBkYJ7mFAjAHUlxhQjzY7GKCcEucIdDWs2QFwGHzJ1uY6AZxTYiIxIIAnbG36q7urvITZjIDRG2DNewgxaH93XtVylhKoLPJlAzpmS/IegIMNUI+sdvdYdwFFb3xJHaoTSomTILpZiTGfsYvmjp9riQIR+E1Gm51BlZtPtfUBc5wp4m3QnESBGmsozqPfAgpzLaZD1iTA2/5dvP6xDxOPVtQ8aWuzvZpT94GWT8lBJr7S2MDKnbrcGOOALNyHuNwsL9vaHfEFWoxgUrmtX+kwJ1sOrTiHfgNLgyI0zKnzcAAAAABJRU5ErkJggg=="/>
-                    <a href="mailto:ctech2k24@gmail.com">ctech2k24@gmail.com</a>
-                </div>
-                <div class="instagram">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAABUVJREFUWEftV1mMFFUUPbd6hqFfDxjFhASJgiQkiKDign4QQcG4IDEuLNPV069HFhfAoCwq4ASBCKKJosiWsaunq2YQ/DGKxCVgjB8GREAiLohAUIOKEGDq9QzQdaV6esa2p7qrYfjgg/tZde6p88699e57hIss6CLTg0uC/CpSskP1lZHr04ybwNwHQMCPOPs+rRHvZyrbIZsS35eS4ysoHopEiLkWQL9SCAtiCHvhYJ5MmeuL8RQUVCfG9wogkABoZKeEdEzedJrSsUl2459evAUFGcHIZhCPyCQx/QjC28TpbcdTPXZNx1stpYhcjcnl5UINIvDNBKoBcHs2b6NU5uiSBSWC4XFMtK41gVe0qNCMKVhzuhQRhTAMUL3QFzAw38UQtIeiqv6DfLynQ4bQf8n2zDf7Vb+hfcW+iQBGE+gwtHRjtKlhy/mKM4T+EYAHQNgrbbO/r6C6iqprAwFtX2ulOByzrQZD6B8DuK81maZKlVxxvoLqu0budDT+IsOfdvrHWhr25nJ1cMgI6o+A8L4LOuM4fSY2NxyMC90gIJqRwzw+mrLeq7uyppumTj1HwB0Absx8ALxDA20lRUurkbS9RC/HtIru4lhzK57GxFTyw6KC4sHwNCJanklQZcEYjOZEqHokHGcga/hL2mZjvFIfTg4sAL28naJDrHF1rMnMOJEfhtCPAricwZNjylpbXJDQ5xPwMoC0VGZZPlm8qz6MNHzZ9pwYmx0NuwnE5PBgJtzV/s6hYdHm5Fcegn53F8PMM2Ip6w0/QYsJeBFAk1Rmt1zwejxWqUTFDwB6AzgC4rC0rU9zMUYofA+YGgD0AOiQpjAgv3yG0H8DcBUIs6RtvubTQ+GlIJoN4JhU5hW54LgI1xCoLtNL4PujytrkVZKECI9mUKY3iFhGbSvxP9HnIige1JcQYQ5AR6VK9sgjcuvtbgFfS2W6zVwwDKFvA3ALwKuksp7M4zmUcZlojrSTrxZ1KBGMvMLEz3s5ZAjdHZDXMfBOTJlPFxMUF/oqAqYA2C2VOThPUHaf43lSWYuLl0xEFgE8F4yTMmV2zyPaA2AAgJVSmU8Vdyi8EqAn3LEjU0k3pz2MkP4TGP0BrpXKcn+g9ui4D7UJAk5IZV6WR9QAxgSAtkqVHOpTsu0AhoBhyZSpd94hT0GR2WBemm3qB6PKcsdAh0gEw48y0YbMC+KZ0rZezwUlhH6AgWuY+IWYbS3xcSi8EKB5XiVbG5rQs5wDbh+5zf6PRhSutpOf5BLGQ/q9xGQB7P6hh7sE0oOqTjYeyXPo8Nmy92TC7JhtLvMT9NLZn3WBlyA3MR7SRxGjfe9xN0bW6DsGEzk0uP3IAsDR6O6apuTmfAsNoR8H0B1Mz8hUMjMV2sJjlkWmg/hNFyBUS8VYbDiVT+g/OvAHkRaN2vWfe5XUCOonQOhW0ujIrb/DZ66uSa1z94wO4Q7XMnVqlgO+jUBDXACDv3WH6xnRZdnjR9496ZW3GpNFhVBtg3e0VObGog7VhfQbAoydGRBjnN8Z2OujxZ4lKqtGsKNlyshOWd9Ys3GgqKBa1Gp9xa9/Z5tyu1AtQ8diQ/pcP1wIbwjd7b9RAPZIZQ7MxxU4MYbnArQoC367RYlnO3uEdRfaR+xbmB3cBWehp6AtGF52UPTe5Y6J1tL9d8gPpk7v9Gr0Av2Se8ifBODWDI7QKG2zyiun4K0ju+esATDmQpWrlYdXsCqf6R78zklQGzgejDxMxO5E7uxF8WcGpsZs87NiC/S9ubYlXzRX6QtbLn+2kh3yp7owiEuC/Hz8F5k4NUN2AUwaAAAAAElFTkSuQmCC"/>
-
-                    <a href="https://www.instagram.com/ct_ctech?utm_source=qr&igsh=azl6ejc0ZG9ld3g">ct_ctech</a>
-                </div>
-                <div class="whatsapp">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAABOZJREFUWEftl1tsVFUUhr81vaCILRerPBTFS6IlFuMttt4CaZkzLTTxhpcmWg1otNZqTHzRGGk0Gn3QKBKIogKCSIhRA7RzTpGOMUgJiVHU8KIPKkjloth4obWd5dlnTutxeubMtLzwwHlq915r7X/WXv+/1hZOsk9OMjycApTvRiacoQZlElAzDJUCM4Fihb4Y7D8Ou1PCH/kOD9sfN6C4cptAi0KdwOk5Dh0CUgrrHViHoIWCKxhQQrk6Da8J1GQF/xXYDxwHZgNnZ+1/mYa2bmFnIaAKApRQ7lR411yLH/Q74B2z5gg/BQ+ap0wphRuARQL3AyXgZajdFl7PByovIEtpA5b7gQ4KPH0mrNksDOcLHldmCawEFhpbgVeSwuNRfpGAEoql0JWJRU8x3LpN+C0fkOD+M0qsFy8zD/nrj9nCq7li5ATUoFyYhq+AM4DtNWB1COnxgAnaxpXVAkvM9SlYjtA9LpZZygfALQoHSqB6NDOKLIBrBX7Mrp8osFcqJRXQo3AdcLAMZm8WBrN9QjPUoNSkYZcxVmhyhK3mb6M9w5AyTFPodYTa8WQsoVys8LUpdIGlSeGtggBZyhtkGJKyhfkjTgmlVWHFyP9FMLdTvAMK/uLKCoFWgZ1J4fq8gBYrRf3wi8usGQqtjngs8b64sk2gMRBklS2jxVoQKEuph0z9DMPU7cLvQccxV9aoVA/DXmNUBLM7hR9GHCzlQ+CmQICtttBUEBLfaLFS2o/H1MkC85NCKhJQ4BcM2VAalP2E8oTCS35tHQCucIRD4wFkbC312DtX4O6ksD4SkK/KG4FDtnBO0NhSpgNGpacBfWVwXhhT8gG0lM9cKTH185QtPJ8vQ83ABqDfFsqzgyeUJQqrzbrA8qTQng9A9r6lfA7UGtVPCs9FAoorDQKdxqgUKrYIR0ICvgfc5a+vKoNHg5mylPsGYGNKvIY75nP3TV2eq7DEEd6OBFSnXFAM3xujGNR2Cb3ZEY3InZVpKXX+3h73Ch+0hS8SSrvitYZjJtMKLwYFtF4pL4KjhjOu1lndghMJCEUsvKxMF+hICsvCfuVCZdoQfAJcHtjfDVwGnBZY22cLcwJMvQdYCwwOwIzsQS5UqRPKGoUW4HAZVOYqXF+5XzZCl6uOFDodyXR7n2EjBR0qGaGA4sqNrkZ86sdosYV1UYVbr1QVwcNkmmcwO3sVFo1cWVxZIGSuSOFmR/goO27Obm8pPW7rmJfdPqKAxdWbDBbFoErhcAxWdwkDxqdJmTwIptbm5GobPnPDj0goexSuUnjBEZ6MAlLInqW8D9wBmHn7GkOAML/QDM1Tpk4CMyuLGeYdYUchh4bZmJF2Umb89VpOmDpHsywj7bcDmxT+PgrlM6A05i17c/K+ElixRfgrEqQicWgWeNZl1fl+3SxzhI4ov9AMWcqb7ktiqRmkgG/AG0FGBnwTrx9Y6dbKpinwbZCFjcrMNDSn4V6B6sDhbbb8N7rkApULkHlJVGY5mZeDmX0uzWjm6GfGWtPfjBCaTFQE/cxA5grhI10yytrIxI4BFFcuMdfiex1R+FhgxwB0poRjJgPD8IDbfI32/K/5Bk76x38objjhh6LRiliGXXYuJngHK1IPs2JwkUCV/xjoA352h/hdjvDnRIiQ9102kaAn4nMKUL7snXQZ+hdr/YI0pO9oawAAAABJRU5ErkJggg=="/>
-                    <a href="https://chat.whatsapp.com/Kv1swY2mUg7DYimlTxdTYl ">ctech ' 24 participants</a>
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="contact-right">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.345124061931!2d76.9905774748085!3d11.012711589150843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265d0f0e202dd%3A0x6c1cb249318c77f!2sHindusthan%20College%20of%20Arts%20%26%20Science!5e0!3m2!1sen!2sin!4v1706810411507!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
-
-    <div class="footer">
-        <h4>&#169;computertechnology</h4>
-    </div>
+    <section id="home" class="bg-white dark:bg-purple-100">
     
-    <script src="script.js"></script>
+        <div class="container px-6 py-20 mx-auto text-center">
+            <div class="max-w-lg mx-auto">
+                <h1 class="text-3xl font-semibold text-gray-800 dark:text-gray-900 lg:text-4xl font-bold  font-cario">CTECH ' 25</h1>
+                <p class="mt-6 text-gray-500 dark:text-gray-700 text-xl">Sixth National Technical Symposium conducted by the Department of Computer Technology</p>
+                <button class="px-5 py-3 mt-6 text-xl font-medium leading-5 text-center text-white capitalize bg-blue-600 rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none">
+                    <a href="https://forms.gle/Zkmayf8EHmm1zZyT6" class="" target="_blank">Register</a>
+                </button>
+            </div>
+    
+            <div class="flex justify-center mt-10">
+                <img class="object-cover w-full h-96 rounded-xl lg:w-4/5" src="./assets/Background img.png" />
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-white dark:bg-gray-800">
+    <div class="container px-6 py-10 mx-auto">
+        <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">About the Department</h1>
+
+        <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+            <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="./assets/staff/HOD.jpg" alt="">
+
+            <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
+                <a href="#" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white">
+                    Dr.K.Mythili
+                </a>
+
+                <p class="text-sm text-blue-500 uppercase">Head of the Department</p>
+
+                <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-[14px]">
+                    The Department of Computer Technology was established in 2008. The department offers B.Sc (Computer Technology) as three-year undergraduate programme, headed by Dr.K.Mythili , Professor and is followed by 5 Faculty members with nearly 300 students. The department has well qualified, experienced and committed faculty to provide quality industry tuned education to the students. The department conducts many Hands-on Training, Seminars and workshops. Computer Technology Association organizes a National Level Technical Symposium CTECH yearly to exhibit the student talents. The Department is recognized under DBT star College Scheme sponsored by MHRD. The department has very good placement records and many students have been placed in WIPRO Technologies, AMAZON Tech Mahindra, TCS, CTS, INFOSYS, Accenture, VEE technologies, KGISL, Velan InfoTech, Asec Technology, etc.
+                </p>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="staff-list" class="w-full flex justify-around flex-wrap py-5 px-3">
+        <div class="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 border-2 border-purple-400">
+            <img class="object-cover w-full h-56" src="./assets/staff/Amalmary.jpg" alt="avatar">
+        
+            <div class="py-5 text-center">
+                <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">Mrs.M.Amalmary</a>
+                <span class="text-sm text-gray-200 dark:text-gray-200">Asst.Profr</span>
+            </div>
+        </div>
+
+        <div class="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 border-2 border-purple-400">
+            <img class="object-cover w-full h-56" src="./assets/staff/Mythili.jpg" alt="avatar">
+        
+            <div class="py-5 text-center">
+                <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">Mrs.D.Mythili</a>
+                <span class="text-sm text-gray-200 dark:text-gray-200">Asst.Profr</span>
+            </div>
+        </div>
+
+        <div class="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 border-2 border-purple-400">
+            <img class="object-cover w-full h-56" src="./assets/staff/DhanaPriya.jpg" alt="avatar">
+        
+            <div class="py-5 text-center">
+                <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">Mrs.N.Dhanapriya</a>
+                <span class="text-sm text-gray-200 dark:text-gray-200">Asst.Profr</span>
+            </div>
+        </div>
+
+        <div class="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 border-2 border-purple-400">
+            <img class="object-cover w-full h-56" src="./assets/staff/Megala.jpg" alt="avatar">
+        
+            <div class="py-5 text-center">
+                <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">Dr.S.Sandhana Megala</a>
+                <span class="text-sm text-gray-200 dark:text-gray-200">Asst.Profr</span>
+            </div>
+        </div>
+
+        <div class="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 border-2 border-purple-400">
+            <img class="object-cover w-full h-56" src="./assets/staff/UmaSanthiya.jpg" alt="avatar">
+        
+            <div class="py-5 text-center">
+                <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">Mrs.P.Uma Santhiya</a>
+                <span class="text-sm text-gray-200 dark:text-gray-200">Asst.Profr</span>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+
+    <section id="events" class="bg-white dark:bg-purple-200 py-5 px-3">
+    <h2 class="text-3xl md:text-4xl font-semibold text-center ">Events</h2>
+    <div  class="w-full flex justify-around flex-wrap pt-5">
+        <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto border-2 border-purple-600 rounded-md">
+            <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md " style="background-image: url('/assets/events/Debugging.jpg')"></div>
+        
+            <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Debugging</h3>
+        
+                <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                    <span class="font-bold text-gray-800 dark:text-gray-200">2/team</span>
+                    <button class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-600 focus:bg-gray-200 dark:focus:bg-gray-600 focus:outline-none ">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto border-2 border-purple-600 rounded-md">
+            <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(./assets/events/IPL\ Auction.jpg)"></div>
+        
+            <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">IPL Auction</h3>
+        
+                <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                    <span class="font-bold text-gray-800 dark:text-gray-200">4/team</span>
+                    <button class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-600 focus:bg-gray-200 dark:focus:bg-gray-600 focus:outline-none">
+                        <a href="https://drive.google.com/file/d/1jtoAOA4taB16taZ_ooqeBio_BOW0zt9c/view">View Details</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto border-2 border-purple-600 rounded-md">
+            <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(./assets/events/Paper\ Presentation.jpg)"></div>
+        
+            <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Paper Presentation</h3>
+        
+                <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                    <span class="font-bold text-gray-800 dark:text-gray-200">2/team</span>
+                    <button class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-600 focus:bg-gray-200 dark:focus:bg-gray-600 focus:outline-none">
+                        <a href="https://drive.google.com/file/d/1jtoAOA4taB16taZ_ooqeBio_BOW0zt9c/view">View Details</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto border-2 border-purple-600 rounded-md">
+            <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(./assets/events/Movie\ Buff.jpg)"></div>
+        
+            <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Movie Phile</h3>
+        
+                <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                    <span class="font-bold text-gray-800 dark:text-gray-200">2/team</span>
+                    <button class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-600 focus:bg-gray-200 dark:focus:bg-gray-600 focus:outline-none">
+                        <a href="https://drive.google.com/file/d/1jtoAOA4taB16taZ_ooqeBio_BOW0zt9c/view">View Details</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto border-2 border-purple-600 rounded-md">
+            <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(./assets/events/Quiz.jpg)"></div>
+        
+            <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Quiz</h3>
+        
+                <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                    <span class="font-bold text-gray-800 dark:text-gray-200">2/team</span>
+                    <button class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-600 focus:bg-gray-200 dark:focus:bg-gray-600 focus:outline-none">
+                        <a href="https://drive.google.com/file/d/1jtoAOA4taB16taZ_ooqeBio_BOW0zt9c/view">View Details</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto border-2 border-purple-600 rounded-md">
+            <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(./assets/events/Poster\ Designing.jpg)"></div>
+        
+            <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Poster Designing</h3>
+        
+                <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                    <span class="font-bold text-gray-800 dark:text-gray-200">2/team</span>
+                    <button class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-600 focus:bg-gray-200 dark:focus:bg-gray-600 focus:outline-none">
+                        <a href="https://drive.google.com/file/d/1jtoAOA4taB16taZ_ooqeBio_BOW0zt9c/view">View Details</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+  
+    <section id="details" class="bg-white dark:bg-gray-900">
+        <div class="container grid grid-cols-1 gap-8 px-4 py-12 mx-auto lg:grid-cols-2">
+            <div class="flex flex-col items-center max-w-lg mx-auto text-center">
+                <h2 class="text-3xl font-semibold tracking-tight text-gray-800 dark:text-white">
+                    Brochure
+                </h2>
+    
+                <p class="mt-3 text-gray-500 dark:text-gray-300">Get all the details about our events</p>
+    
+                <a href="https://drive.google.com/file/d/1jtoAOA4taB16taZ_ooqeBio_BOW0zt9c/view" class="inline-flex items-center justify-center w-full px-5 py-2 mt-6 text-white transition-colors duration-300 bg-blue-600 rounded-lg sm:w-auto hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80" target="_blank">
+                    View
+                </a>
+            </div>
+    
+            <div class="flex flex-col items-center max-w-lg mx-auto text-center">
+                <h2 class="text-3xl font-semibold tracking-tight text-gray-800 dark:text-white">
+                    Magazine
+                </h2>
+    
+                <p class="mt-3 text-gray-500 dark:text-gray-300">Have a look at our Department Magazine</p>
+    
+                <a href="https://drive.google.com/file/d/1Q80bXsNSX9rinuVKBNUDK-yg5JAyLPCd/view" class="inline-flex items-center justify-center w-full px-5 py-2 mt-6 text-gray-200 transition-colors duration-300 transform bg-white border border-gray-200 rounded-lg dark:bg-gray-900 dark:border-gray-200 hover:bg-gray-100 dark:text-white sm:w-auto dark:hover:bg-gray-800 dark:ring-gray-200 focus:ring focus:ring-gray-200 focus:ring-opacity-80" target="_blank">
+                    View
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="team" class="bg-white dark:bg-purple-200">
+        <div class="container px-6 py-8 mx-auto">
+            <h2 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-black">Our Team</h2>
+
+            <div class="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+
+                <div class="w-full border-2 border-slate-800 max-w-xs text-center bg-slate-800 rounded-xl">
+                    <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./assets/team/Design.jpg" alt="avatar" />
+
+                    <div class="my-2">
+                        <h3 class="text-lg font-medium text-gray-200 dark:text-gray-200">Design</h3>
+                    </div>
+                </div>
+
+                <div class="w-full border-2 border-slate-800 max-w-xs text-center bg-slate-800 rounded-xl">
+                    <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./assets/team/website.jpg" alt="avatar" />
+
+                    <div class="my-2">
+                        <h3 class="text-lg font-medium text-gray-200 dark:text-gray-200">Website</h3>
+                    </div>
+                </div>
+  
+
+                <div class="w-full border-2 border-slate-800 max-w-xs text-center bg-slate-800 rounded-xl">
+                    <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./assets/team/Magazine.jpg" alt="avatar" />
+
+                    <div class="my-2">
+                        <h3 class="text-lg font-medium text-gray-200 dark:text-gray-200">Magazine</h3>
+                    </div>
+                </div>
+
+                <div class="w-full border-2 border-slate-800 max-w-xs text-center bg-slate-800 rounded-xl">
+                    <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./assets/team/video editing.jpg" alt="avatar" />
+
+                    <div class="my-2">
+                        <h3 class="text-lg font-medium text-gray-200 dark:text-gray-200">Video Editing</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="contact" class="bg-white dark:bg-gray-900">
+        <div class="container px-6 py-8 mx-auto">
+            <div class="flex flex-col items-center text-center">
+                <a href="#">
+                    <img class="h-[50px] w-[50px]" src="./assets/Ctech logo.png" alt="">
+                </a>
+    
+                <div class="flex flex-wrap justify-center mt-6 -mx-4">
+                    <a href="#home" class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Home </a>
+                    
+                    <a href="#about" class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> About </a>
+                    
+                    <a href="#events" class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Events </a>
+    
+                    <a href="#team" class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Teams </a>
+                </div>
+    
+            </div>
+    
+            <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-200" />
+    
+            <div class="flex flex-col items-start sm:items-center sm:flex-row sm:justify-between">
+                <div>
+                    <p class="text-lg font-semibold text-gray-500 dark:text-gray-400">Student Coordinators</p>
+                    <p class="mt-1 text-gray-500 dark:text-gray-400">Muthuselvam G - 9360290376 </p>
+                    <p class="mt-1 text-gray-500 dark:text-gray-400">Devarajan S - 9363388354</p>
+                </div>
+
+                <div class="mt-3">
+                    <p class="text-lg font-semibold text-gray-500 dark:text-gray-400">Web Developers</p>
+                    <p class="mt-1 text-gray-500 dark:text-gray-400">Pradeep Kumar R</p>
+                    <p class="mt-1 text-gray-500 dark:text-gray-400">Gowtham J</p>
+                    <p class="mt-1 text-gray-500 dark:text-gray-400">Gopikrishna R</p>
+
+                </div>
+                <div class="flex -mx-2 mt-5">
+                    <a href="https://chat.whatsapp.com/IjzdY9JcojA8M0A5tcj0Qg" target="_blank" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Reddit">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                        </svg>
+                    </a>
+    
+                    <a href="https://www.instagram.com/ct_ctech/?igsh=azl6ejc0ZG9ld3g" target="_blank" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Github">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg>
+                    </a>
+
+                    <a href="mailto:ctech2k25@gmail.com" target="_blank" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Facebook">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                            <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
